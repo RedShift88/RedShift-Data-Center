@@ -11,7 +11,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 	<head>
-		<title>Maintenance Event Form</title>
+		<title>RedShift Data Center</title>
 		<script type="text/JavaScript" src="/javascript/today.js"></script>
 	</head>
 	<body onload="todayDate()">

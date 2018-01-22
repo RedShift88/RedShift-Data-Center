@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 	<head>
-		<title>Service Tech Form</title>
+		<title>RedShift Data Center</title>
 	</head>
 	<body>
 		<h1>Service Tech Form</h1>

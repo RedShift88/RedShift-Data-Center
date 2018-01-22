@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <!-- JSPC servlet mappings start -->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.createEquipment_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.createEquipment_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.createEquipmentType_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.createEquipmentType_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.equipmentList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.equipmentList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.home_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.home_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.maintenanceEventForm_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.maintenanceEventForm_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.serviceTechForm_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.serviceTechForm_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.serviceTechList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.serviceTechList_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.createEquipment_jsp</servlet-name>
+        <url-pattern>/createEquipment.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.createEquipmentType_jsp</servlet-name>
+        <url-pattern>/createEquipmentType.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.equipmentList_jsp</servlet-name>
+        <url-pattern>/equipmentList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.home_jsp</servlet-name>
+        <url-pattern>/home.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.maintenanceEventForm_jsp</servlet-name>
+        <url-pattern>/maintenanceEventForm.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.serviceTechForm_jsp</servlet-name>
+        <url-pattern>/serviceTechForm.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.serviceTechList_jsp</servlet-name>
+        <url-pattern>/serviceTechList.jsp</url-pattern>
+    </servlet-mapping>
+
+<!-- JSPC servlet mappings end -->
+
+<welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

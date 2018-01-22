@@ -11,7 +11,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 	<head>
-		<title>Equipment List</title>
+		<title>RedShift Data Center</title>
 	</head>
 	<body>
 <%
