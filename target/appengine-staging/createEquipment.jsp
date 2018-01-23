@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.google.appengine.api.datastore.DatastoreService" %>
+<%@ page import="com.google.appengine.api.datastore.DatastoreServiceFactory" %>
+<%@ page import="com.google.appengine.api.datastore.Entity" %>
+<%@ page import="com.google.appengine.api.datastore.FetchOptions" %>
+<%@ page import="com.google.appengine.api.datastore.Key" %>
+<%@ page import="com.google.appengine.api.datastore.KeyFactory" %>
+<%@ page import="com.google.appengine.api.datastore.Query" %>
+<%@ page import="java.util.List" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 	<head>
 		<title>RedShift Data Center</title>
@@ -20,23 +29,19 @@
 			</select><br>
 			Type:<br>
 			<select name="type">
-				<option value="Ultrasound">Ultrasound</option>
-				<option value="Laser">Laser</option>
-				<option value="Imaging">Imaging</option>
+<%
+	DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+	Key equipmentTypeKey = KeyFactory.createKey("Equipment Type", "default");
+	Query equipmentTypeQuery = new Query("Equipment Type", equipmentTypeKey);
+	List<Entity> equipmentTypeList = datastore.prepare(equipmentTypeQuery).asList(FetchOptions.Builder.withDefaults());
+	for(Entity equipmentType : equipmentTypeList){
+		pageContext.setAttribute("equipmentType", equipmentType.getProperty("Description"));
+%>
+				<option value="${fn:escapeXml(equipmentType)}">${fn:escapeXml(equipmentType)}</option>
+<%
+	}
+%>
 			</select><br>
-			Make:<br>
-			<input type="text" name="make"><br>
-			Model:<br>
-			<input type="text" name="model"><br>
-			Year:<br>
-			<input type="number" step="1" min="1970" max="2019" name="year"><br>
-			Location:<br>
-			<select name="location">
-				<option value="Schertz">Schertz</option>
-				<option value="Westover">Westover</option>
-			</select><br>
-			Notes:<br>
-			<textarea rows="5" cols="75" name="notes"></textarea><br>
 			<input type="submit" value="Submit">
 		</form>
 	</body>

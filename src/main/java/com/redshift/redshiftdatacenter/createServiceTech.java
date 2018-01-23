@@ -1,4 +1,4 @@
-package com.ge20171512.webapp;
+package com.redshift.redshiftdatacenter;
 
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;

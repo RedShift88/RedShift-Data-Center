@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  
   <!-- JSPC servlet mappings start -->
 
     <servlet>
@@ -90,4 +91,34 @@
 <welcome-file-list>
     <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+        <servlet-name>createEquipment</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.createEquipment</servlet-class>
+    </servlet>
+	
+	<servlet-mapping>
+        <servlet-name>createEquipment</servlet-name>
+        <url-pattern>/createEquipment</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>createServiceTech</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
+    </servlet>
+	
+	<servlet-mapping>
+        <servlet-name>createEquipmentType</servlet-name>
+        <url-pattern>/createEquipmentType</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>createEquipmentType</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
+    </servlet>
+	
+	<servlet-mapping>
+        <servlet-name>createServiceTech</servlet-name>
+        <url-pattern>/createServiceTech</url-pattern>
+    </servlet-mapping>
 </web-app>
