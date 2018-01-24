@@ -51,6 +51,11 @@
         <servlet-class>org.apache.jsp.serviceTechList_jsp</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>org.apache.jsp.viewEquipmentDetails_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.viewEquipmentDetails_jsp</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>org.apache.jsp.addEquipmentDetails_jsp</servlet-name>
         <url-pattern>/addEquipmentDetails.jsp</url-pattern>
@@ -94,6 +99,11 @@
     <servlet-mapping>
         <servlet-name>org.apache.jsp.serviceTechList_jsp</servlet-name>
         <url-pattern>/serviceTechList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.viewEquipmentDetails_jsp</servlet-name>
+        <url-pattern>/viewEquipmentDetails.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->

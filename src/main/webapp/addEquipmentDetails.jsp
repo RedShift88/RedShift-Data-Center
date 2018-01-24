@@ -40,19 +40,88 @@
 			<b>Type:</b> ${fn:escapeXml(equipmentType)}<br>
 			<br>
 <%
-	Integer propertyNumber = 1;
-	String parameterToCheck = "Property " + propertyNumber + " Description";
-	while(equipmentType.hasProperty(parameterToCheck)){
-		pageContext.setAttribute("propertyDescription", equipmentType.getProperty("Property " + propertyNumber + " Description"));
-		pageContext.setAttribute("propertyType", equipmentType.getProperty("Property " + propertyNumber + " Type"));
-		pageContext.setAttribute("propertyOptions", equipmentType.getProperty("Property " + propertyNumber + " Options"));
-		pageContext.setAttribute("propertyTracking", equipmentType.getProperty("Property " + propertyNumber + " Tracking"));
+		Integer propertyNumber = 1;
+		String parameterToCheck = "Property " + propertyNumber + " Description";
+		while((Boolean) equipmentType.hasProperty(parameterToCheck)){
+			String propertyType = (String) equipmentType.getProperty("Property " + propertyNumber + " Type");
+			pageContext.setAttribute("propertyNumber", "propertyNumber"+propertyNumber);
+			pageContext.setAttribute("propertyDescription", equipmentType.getProperty("Property " + propertyNumber + " Description"));
+			String rawPropertyOpteions = (String) equipmentType.getProperty("Property " + propertyNumber + " Options");
+			String[] propertyOptions = rawPropertyOpteions.split(",");
+			pageContext.setAttribute("propertyTracking", equipmentType.getProperty("Property " + propertyNumber + " Tracking"));
+			switch(propertyType){
+				case "String":
 %>
-			${fn:escapeXml(propertyDescription)}: ${fn:escapeXml(propertyType)}, ${fn:escapeXml(propertyOptions)}, ${fn:escapeXml(propertyTracking)}<br>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="text" name="${fn:escapeXml(propertyNumber)}"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
 <%
-		propertyNumber += 1;
-		parameterToCheck = "Property " + propertyNumber + " Description";
-	}
+					break;
+				case "Text":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<textarea name="${fn:escapeXml(propertyNumber)}" rows=5 cols=50 wrap="soft"></textarea><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Drop Down":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<select name="${fn:escapeXml(propertyNumber)}">
+<%
+					for(String propertyOption : propertyOptions){
+						pageContext.setAttribute("propertyOption", propertyOption);
+%>
+				<option value="${fn:escapeXml(propertyOption)}">${fn:escapeXml(propertyOption)}</option>
+<%
+				}
+%>
+			</select><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Integer":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="number" name="${fn:escapeXml(propertyNumber)}" min="0" step="1"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Double":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="number" name="${fn:escapeXml(propertyNumber)}" min="0" step=".01"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Boolean":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<select name="${fn:escapeXml(propertyNumber)}">
+				<option value="true">True</option>
+				<option value="false">False</option>
+			</select><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Date":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="date" name="${fn:escapeXml(propertyNumber)}"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				default:
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="text" name="${fn:escapeXml(propertyNumber)}"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+
+			}
+			propertyNumber += 1;
+			parameterToCheck = "Property " + propertyNumber + " Description";
+		}
 %>
 			<input type="submit" value="Submit">
 		</form>

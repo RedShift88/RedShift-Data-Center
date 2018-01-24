@@ -20,9 +20,10 @@
 	Query equipmentQuery = new Query("Equipment", equipmentKey);
 	List<Entity> equipmentList = datastore.prepare(equipmentQuery).asList(FetchOptions.Builder.withDefaults());
 	for(Entity equipment : equipmentList){
+		pageContext.setAttribute("equipmentLink", "/viewEquipmentDetails.jsp?key="+KeyFactory.keyToString(equipment.getKey()));
 		pageContext.setAttribute("equipment", equipment.getProperty("Description") + " - " + equipment.getProperty("Status"));
 %>
-		<p>${fn:escapeXml(equipment)}</p><br>
+		<p><a href="${fn:escapeXml(equipmentLink)}">${fn:escapeXml(equipment)}</a></p>
 <%
 	}
 %>
