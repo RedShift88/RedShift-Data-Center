@@ -16,7 +16,7 @@
 	<body>
 		<h1>Equipment Form</h1>
 
-		<p>Please enter the details of the equipment below</p>
+		<p>Please enter the equipment below</p>
 		
 		<form action="/createEquipment" method="post">
 			Description:<br>
@@ -36,12 +36,13 @@
 	List<Entity> equipmentTypeList = datastore.prepare(equipmentTypeQuery).asList(FetchOptions.Builder.withDefaults());
 	for(Entity equipmentType : equipmentTypeList){
 		pageContext.setAttribute("equipmentType", equipmentType.getProperty("Description"));
+		pageContext.setAttribute("equipmentTypeKey", KeyFactory.keyToString(equipmentType.getKey()));
 %>
-				<option value="${fn:escapeXml(equipmentType)}">${fn:escapeXml(equipmentType)}</option>
+				<option value="${fn:escapeXml(equipmentTypeKey)}">${fn:escapeXml(equipmentType)}</option>
 <%
 	}
 %>
-			</select><br>
+			</select><br><br>
 			<input type="submit" value="Submit">
 		</form>
 	</body>

@@ -29,6 +29,13 @@
 				<option value="Email Address">Email Address</option>
 				<option value="Postal Address">Postal Address</option>
 			</select><br><br>
+			Property #1 Options:<br>
+			<input type="text" name="propertyOptions1"><br><br>
+			Property #1 Trackable:<br>
+			<select name="propertyTracking1">
+				<option value="true">True</option>
+				<option value="false">False</option>
+			</select><br><br>
 			<button type="button" onclick="addPropertyItem(2);" id="addPropertyButton" >Add property</button><br><br>
 			<input id="submitButton" type="submit" value="Submit">
 		</form>

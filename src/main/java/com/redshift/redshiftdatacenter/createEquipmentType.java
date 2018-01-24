@@ -26,8 +26,10 @@ public class createEquipmentType extends HttpServlet {
 		Integer propertyNumber = 1;
 		String parameterToCheck = "propertyDescription" + propertyNumber;
 		while(req.getParameterMap().containsKey(parameterToCheck)){
-			equipmentType.setUnindexedProperty("Property Description" + propertyNumber, req.getParameter("propertyDescription"+propertyNumber));
-			equipmentType.setUnindexedProperty("Property Type" + propertyNumber, req.getParameter("propertyType"+propertyNumber));
+			equipmentType.setUnindexedProperty("Property " + propertyNumber + " Description", req.getParameter("propertyDescription"+propertyNumber));
+			equipmentType.setUnindexedProperty("Property " + propertyNumber + " Type", req.getParameter("propertyType"+propertyNumber));
+			equipmentType.setUnindexedProperty("Property " + propertyNumber + " Options", req.getParameter("propertyOptions"+propertyNumber));
+			equipmentType.setUnindexedProperty("Property " + propertyNumber + " Tracking", req.getParameter("propertyTracking"+propertyNumber).equals("true"));
 			propertyNumber += 1;
 			parameterToCheck = "propertyDescription" + propertyNumber;
 		}

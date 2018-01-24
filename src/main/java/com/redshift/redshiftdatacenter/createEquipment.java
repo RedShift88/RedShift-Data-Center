@@ -21,14 +21,14 @@ public class createEquipment extends HttpServlet {
 		
 		String description = req.getParameter("description");
 		String status = req.getParameter("status");
-		String type = req.getParameter("type");
+		Key typeKey = KeyFactory.stringToKey((String) req.getParameter("type"));
 	
 		Key equipmentKey = KeyFactory.createKey("Equipment", "default");
 		Entity equipment = new Entity("Equipment", equipmentKey);
 		
 		equipment.setProperty("Description", description);
 		equipment.setProperty("Status", status);
-		equipment.setProperty("Type", type);
+		equipment.setUnindexedProperty("Type", typeKey);
 		
 		datastore.put(equipment);
 

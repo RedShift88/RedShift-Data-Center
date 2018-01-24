@@ -19,18 +19,8 @@
 	Key equipmentKey = KeyFactory.createKey("Equipment", "default");
 	Query equipmentQuery = new Query("Equipment", equipmentKey);
 	List<Entity> equipmentList = datastore.prepare(equipmentQuery).asList(FetchOptions.Builder.withDefaults());
-	String location = "";
-	String locationTest = "";
 	for(Entity equipment : equipmentList){
-		locationTest = (String) equipment.getProperty("Location");
-		if(!location.equals(locationTest)){
-			location = locationTest;
-			pageContext.setAttribute("groupHeading", locationTest);
-%>
-		<h3>${fn:escapeXml(groupHeading)}</h3>
-<%
-		}
-		pageContext.setAttribute("equipment", equipment.getProperty("Description") + " - " + equipment.getProperty("Make") + " - "  + equipment.getProperty("Model"));
+		pageContext.setAttribute("equipment", equipment.getProperty("Description") + " - " + equipment.getProperty("Status"));
 %>
 		<p>${fn:escapeXml(equipment)}</p><br>
 <%
