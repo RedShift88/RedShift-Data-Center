@@ -37,6 +37,10 @@ handlers:
   script: unused
   login: optional
   secure: optional
+- url: /addEquipmentDetails
+  script: unused
+  login: optional
+  secure: optional
 - url: /createEquipmentType
   script: unused
   login: optional

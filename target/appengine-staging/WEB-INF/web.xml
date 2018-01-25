@@ -112,7 +112,7 @@
     <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
   
-  <servlet>
+	<servlet>
         <servlet-name>createEquipment</servlet-name>
         <servlet-class>com.redshift.redshiftdatacenter.createEquipment</servlet-class>
     </servlet>
@@ -121,10 +121,10 @@
         <servlet-name>createEquipment</servlet-name>
         <url-pattern>/createEquipment</url-pattern>
     </servlet-mapping>
-	
+
 	<servlet>
-        <servlet-name>createServiceTech</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
+        <servlet-name>createEquipmentType</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
     </servlet>
 	
 	<servlet-mapping>
@@ -133,8 +133,18 @@
     </servlet-mapping>
 	
 	<servlet>
-        <servlet-name>createEquipmentType</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
+        <servlet-name>addEquipmentDetails</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.addEquipmentDetails</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+        <servlet-name>addEquipmentDetails</servlet-name>
+        <url-pattern>/addEquipmentDetails</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>createServiceTech</servlet-name>
+        <servlet-class>com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
     </servlet>
 	
 	<servlet-mapping>

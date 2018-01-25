@@ -22,7 +22,7 @@
 		<title>RedShift Data Center</title>
 	</head>
 	<body>
-		<h1>Equipment Details Form</h1>
+		<h1>Equipment Details</h1>
 <%
 		pageContext.setAttribute("equipmentDescription", equipment.getProperty("Description"));
 		pageContext.setAttribute("equipmentStatus", equipment.getProperty("Status"));
@@ -30,21 +30,29 @@
 		Entity equipmentType = datastore.get(typeKey);
 		pageContext.setAttribute("equipmentType", equipmentType.getProperty("Description"));
 %>
-			<b>Description:</b> ${fn:escapeXml(equipmentDescription)}<br>
-			<b>Status:</b> ${fn:escapeXml(equipmentStatus)}<br>
-			<b>Type:</b> ${fn:escapeXml(equipmentType)}<br>
+			<p><b>Description:</b> ${fn:escapeXml(equipmentDescription)}</p>
+			<p><b>Status:</b> ${fn:escapeXml(equipmentStatus)}</p>
+			<p><b>Type:</b> ${fn:escapeXml(equipmentType)}</p>
 			<br>
 <%
 	Integer propertyNumber = 1;
 	String parameterToCheck = "Property " + propertyNumber + " Description";
 	while(equipmentType.hasProperty(parameterToCheck)){
 		pageContext.setAttribute("propertyDescription", equipmentType.getProperty("Property " + propertyNumber + " Description"));
-		pageContext.setAttribute("propertyType", equipmentType.getProperty("Property " + propertyNumber + " Type"));
-		pageContext.setAttribute("propertyOptions", equipmentType.getProperty("Property " + propertyNumber + " Options"));
-		pageContext.setAttribute("propertyTracking", equipmentType.getProperty("Property " + propertyNumber + " Tracking"));
+		if(equipment.hasProperty("Property " + propertyNumber)){
+			pageContext.setAttribute("propertyResult", equipment.getProperty("Property " + propertyNumber));
+		}else{
+			pageContext.setAttribute("propertyResult", "Configuration Error");
+		}
+		if((Boolean) equipmentType.getProperty("Property " + propertyNumber + " Tracking")){
 %>
-			${fn:escapeXml(propertyDescription)}: ${fn:escapeXml(propertyType)}, ${fn:escapeXml(propertyOptions)}, ${fn:escapeXml(propertyTracking)}<br>
+			<p style="color: darkcyan;"><b>${fn:escapeXml(propertyDescription)}:</b> ${fn:escapeXml(propertyResult)}</p>
 <%
+		}else{
+%>
+			<p><b>${fn:escapeXml(propertyDescription)}:</b> ${fn:escapeXml(propertyResult)}</p>
+<%
+		}
 		propertyNumber += 1;
 		parameterToCheck = "Property " + propertyNumber + " Description";
 	}

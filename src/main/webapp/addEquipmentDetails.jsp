@@ -34,7 +34,7 @@
 		Entity equipmentType = datastore.get(typeKey);
 		pageContext.setAttribute("equipmentType", equipmentType.getProperty("Description"));
 %>
-			<input type="hidden" value="${fn:escapeXml(equipmentKey)}">
+			<input type="hidden" name="equipmentKey" value="${fn:escapeXml(equipmentKey)}">
 			<b>Description:</b> ${fn:escapeXml(equipmentDescription)}<br>
 			<b>Status:</b> ${fn:escapeXml(equipmentStatus)}<br>
 			<b>Type:</b> ${fn:escapeXml(equipmentType)}<br>
@@ -46,8 +46,8 @@
 			String propertyType = (String) equipmentType.getProperty("Property " + propertyNumber + " Type");
 			pageContext.setAttribute("propertyNumber", "propertyNumber"+propertyNumber);
 			pageContext.setAttribute("propertyDescription", equipmentType.getProperty("Property " + propertyNumber + " Description"));
-			String rawPropertyOpteions = (String) equipmentType.getProperty("Property " + propertyNumber + " Options");
-			String[] propertyOptions = rawPropertyOpteions.split(",");
+			String rawPropertyOptions = (String) equipmentType.getProperty("Property " + propertyNumber + " Options");
+			String[] propertyOptions = rawPropertyOptions.split(",");
 			pageContext.setAttribute("propertyTracking", equipmentType.getProperty("Property " + propertyNumber + " Tracking"));
 			switch(propertyType){
 				case "String":

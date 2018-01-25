@@ -1,4 +1,5 @@
 com\redshift\redshiftdatacenter\createServiceTech.class
 com\redshift\redshiftdatacenter\createEquipment.class
+com\redshift\redshiftdatacenter\addEquipmentDetails.class
 com\redshift\redshiftdatacenter\HelloAppEngine.class
 com\redshift\redshiftdatacenter\createEquipmentType.class
