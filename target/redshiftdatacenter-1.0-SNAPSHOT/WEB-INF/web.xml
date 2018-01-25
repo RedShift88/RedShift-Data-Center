@@ -4,47 +4,119 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   
-  <welcome-file-list>
-    <welcome-file>home.jsp</welcome-file>
-  </welcome-file-list>
-  
-	<servlet>
-        <servlet-name>createEquipment</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.createEquipment</servlet-class>
-    </servlet>
-	
-	<servlet-mapping>
-        <servlet-name>createEquipment</servlet-name>
-        <url-pattern>/createEquipment</url-pattern>
-    </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
 
 	<servlet>
-        <servlet-name>createEquipmentType</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
-    </servlet>
-	
-	<servlet-mapping>
-        <servlet-name>createEquipmentType</servlet-name>
-        <url-pattern>/createEquipmentType</url-pattern>
-    </servlet-mapping>
-	
-	<servlet>
-        <servlet-name>addEquipmentDetails</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.addEquipmentDetails</servlet-class>
-    </servlet>
+		<servlet-name>createEntity</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.createEntity</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
-        <servlet-name>addEquipmentDetails</servlet-name>
-        <url-pattern>/addEquipmentDetails</url-pattern>
-    </servlet-mapping>
-	
+		<servlet-name>createEntity</servlet-name>
+		<url-pattern>/createEntity</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
-        <servlet-name>createServiceTech</servlet-name>
-        <servlet-class>com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
-    </servlet>
-	
+		<servlet-name>createEntityAdmin</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.createEntityAdmin</servlet-class>
+	</servlet>
+
 	<servlet-mapping>
-        <servlet-name>createServiceTech</servlet-name>
-        <url-pattern>/createServiceTech</url-pattern>
-    </servlet-mapping>
+		<servlet-name>createEntityAdmin</servlet-name>
+		<url-pattern>/createEntityAdmin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createEquipment</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.createEquipment</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>createEquipment</servlet-name>
+		<url-pattern>/createEquipment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createEquipmentType</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>createEquipmentType</servlet-name>
+		<url-pattern>/createEquipmentType</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addEquipmentDetails</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.addEquipmentDetails</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addEquipmentDetails</servlet-name>
+		<url-pattern>/addEquipmentDetails</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>createServiceTech</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>createServiceTech</servlet-name>
+		<url-pattern>/createServiceTech</url-pattern>
+	</servlet-mapping>
+	
+	<error-page>
+        <error-code>500</error-code>
+        <location>/errors/serverError.jsp</location>
+    </error-page>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>cron</web-resource-name>
+			<url-pattern>/cron/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+	</security-constraint>
+	
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>admin</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+		<user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+	
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>standardUser</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+		<user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+	
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>allUsers</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+	
 </web-app>

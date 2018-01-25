@@ -7,45 +7,97 @@ threadsafe: True
 auto_id_policy: default
 api_version: '1.0'
 handlers:
-- url: (/.*)
+- url: (/admin)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: admin
+  secure: always
+- url: (/admin/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: admin
+  secure: always
+- url: (/cron)
   static_files: __static__\1
   upload: __NOT_USED__
   require_matching_file: True
   login: optional
-  secure: optional
+  secure: always
+- url: (/cron/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: optional
+  secure: always
+- url: (/.*)
+  static_files: __static__\1
+  upload: __NOT_USED__
+  require_matching_file: True
+  login: required
+  secure: always
+- url: /admin/.*/
+  script: unused
+  login: admin
+  secure: always
 - url: /
   script: unused
   login: optional
-  secure: optional
+  secure: always
+- url: /admin/
+  script: unused
+  login: admin
+  secure: always
+- url: /admin/.*\.jsp
+  script: unused
+  login: admin
+  secure: always
+- url: /cron/.*\.jsp
+  script: unused
+  login: optional
+  secure: always
 - url: /.*/
   script: unused
   login: optional
-  secure: optional
+  secure: always
 - url: /_ah/.*
   script: unused
-  login: optional
-  secure: optional
-- url: .*\.jsp
+  login: required
+  secure: always
+- url: /.*\.jsp
   script: unused
   login: optional
-  secure: optional
+  secure: always
 - url: /hello
   script: unused
-  login: optional
-  secure: optional
+  login: required
+  secure: always
 - url: /createServiceTech
   script: unused
-  login: optional
-  secure: optional
+  login: required
+  secure: always
 - url: /addEquipmentDetails
+  script: unused
+  login: required
+  secure: always
+- url: .*\.jsp
   script: unused
   login: optional
   secure: optional
 - url: /createEquipmentType
   script: unused
-  login: optional
-  secure: optional
+  login: required
+  secure: always
 - url: /createEquipment
   script: unused
-  login: optional
-  secure: optional
+  login: required
+  secure: always
+- url: /createEntityAdmin
+  script: unused
+  login: required
+  secure: always
+- url: /createEntity
+  script: unused
+  login: required
+  secure: always

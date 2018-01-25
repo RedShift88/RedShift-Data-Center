@@ -13,19 +13,41 @@
 	<head>
 		<title>RedShift Data Center</title>
 	</head>
-	<body>
 <%
 	DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-	Key equipmentKey = KeyFactory.createKey("Equipment", "default");
-	Query equipmentQuery = new Query("Equipment", equipmentKey);
-	List<Entity> equipmentList = datastore.prepare(equipmentQuery).asList(FetchOptions.Builder.withDefaults());
-	for(Entity equipment : equipmentList){
-		pageContext.setAttribute("equipmentLink", "/viewEquipmentDetails.jsp?key="+KeyFactory.keyToString(equipment.getKey()));
-		pageContext.setAttribute("equipment", equipment.getProperty("Description") + " - " + equipment.getProperty("Status"));
+	UserService userService = UserServiceFactory.getUserService();
+	User user = userService.getCurrentUser();
+	if(user != null){
+		Key entityUserKey = KeyFactory.createKey("Entity User", "default");
+		Filter userIDFilter = new FilterPredicate("User", Query.FilterOperator.EQUAL, user.getUserId());
+		Query userQuery = new Query("Entity User", entityUserKey).setFilter(userIDFilter);
+		Entity loggedUser = datastore.prepare(userQuery).asSingleEntity();
+		if (loggedUser != null) {
+%>
+	<body>
+<%
+			Key equipmentKey = KeyFactory.createKey("Equipment", (String) loggedUser.getProperty("Entity Name"));
+			Query equipmentQuery = new Query("Equipment", equipmentKey);
+			List<Entity> equipmentList = datastore.prepare(equipmentQuery).asList(FetchOptions.Builder.withDefaults());
+			for(Entity equipment : equipmentList){
+				pageContext.setAttribute("equipmentLink", "/viewEquipmentDetails.jsp?key="+KeyFactory.keyToString(equipment.getKey()));
+				pageContext.setAttribute("equipment", equipment.getProperty("Description") + " - " + equipment.getProperty("Status"));
 %>
 		<p><a href="${fn:escapeXml(equipmentLink)}">${fn:escapeXml(equipment)}</a></p>
 <%
-	}
+			}
 %>
 	</body>
+<%
+		}
+	} else {
+%>
+	<body>
+		<br>
+		<br>
+		<a href="<%= userService.createLoginURL(request.getRequestURI()) %>" id="loginLink">SIGN IN</a>
+	</body>
+<%
+	}
+%>
 </html>
