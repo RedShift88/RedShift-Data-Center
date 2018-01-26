@@ -30,6 +30,6 @@ public class createEntity extends HttpServlet {
 	
 		datastore.put(entity);
 
-		resp.sendRedirect("/admin/createEntityAdmin.jsp?key="+KeyFactory.keyToString(entity.getKey()));
+		resp.sendRedirect("/entityAdmin/createEntityAdmin.jsp?key="+KeyFactory.keyToString(entity.getKey()));
 	}
 }

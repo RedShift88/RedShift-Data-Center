@@ -27,13 +27,13 @@
 	</body>
 <%
 	} else {
-	%>
+%>
 	<body>
 		<br>
 		<br>
-		<a href="<%= userService.createLoginURL(request.getRequestURI()) %>" id="loginLink">SIGN IN</a>
+		<a href="<%= userService.createLoginURL(request.getRequestURI()+"?"+request.getQueryString()) %>" id="loginLink">SIGN IN</a>
 	</body>
-	<%
+<%
 	}
-	%>
+%>
 </html>

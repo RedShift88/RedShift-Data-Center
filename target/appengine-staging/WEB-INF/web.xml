@@ -57,6 +57,11 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.errors.comingSoon_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.errors.comingSoon_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.errors.serverError_jsp</servlet-name>
         <servlet-class>org.apache.jsp.errors.serverError_jsp</servlet-class>
     </servlet>
@@ -72,6 +77,11 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-name>
         <servlet-class>org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-class>
     </servlet>
@@ -79,6 +89,16 @@
     <servlet>
         <servlet-name>org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-name>
         <servlet-class>org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.entityAdmin.home_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -157,6 +177,11 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.errors.comingSoon_jsp</servlet-name>
+        <url-pattern>/errors/comingSoon.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.errors.serverError_jsp</servlet-name>
         <url-pattern>/errors/serverError.jsp</url-pattern>
     </servlet-mapping>
@@ -172,6 +197,11 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-name>
+        <url-pattern>/entityAdmin/createEntityAdmin.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-name>
         <url-pattern>/entityAdmin/createEquipment.jsp</url-pattern>
     </servlet-mapping>
@@ -179,6 +209,16 @@
     <servlet-mapping>
         <servlet-name>org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-name>
         <url-pattern>/entityAdmin/createEquipmentType.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-name>
+        <url-pattern>/entityAdmin/createEquipmentTypeVehicleTemplate.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
+        <url-pattern>/entityAdmin/home.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -285,6 +325,9 @@
 		<user-data-constraint>
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>
         </user-data-constraint>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
 	</security-constraint>
 	
 	<security-constraint>

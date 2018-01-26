@@ -25,7 +25,7 @@
 		Text entityTextNotes = (Text) entity.getProperty("Notes");
 		pageContext.setAttribute("entityNotes", entityTextNotes.getValue());
 %>
-		<h3>Name: ${fn:escapeXml(entityName)}</h3>
+		<h1>Name: ${fn:escapeXml(entityName)}</h1>
 		<p>Notes: ${fn:escapeXml(entityNotes)}</p>
 		<br>
 <%

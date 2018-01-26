@@ -90,6 +90,24 @@ public class addEquipmentDetails extends HttpServlet {
 								equipment.setUnindexedProperty("Property " + propertyNumber, null);
 							}
 							break;
+						case "DateTime":
+							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
+								try{
+									equipment.setUnindexedProperty("Property " + propertyNumber, formatter.parse(req.getParameter("propertyNumber"+propertyNumber)));
+								}catch (ParseException e){
+									e.printStackTrace();
+								}
+							}else{
+								equipment.setUnindexedProperty("Property " + propertyNumber, null);
+							}
+							break;
+						case "Duration":
+							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
+								equipment.setUnindexedProperty("Property " + propertyNumber, "Every " + req.getParameter("propertyNumber"+propertyNumber) + req.getParameter("propertyNumber"+propertyNumber+"Options"));
+							}else{
+								equipment.setUnindexedProperty("Property " + propertyNumber, null);
+							}
+							break;
 						default:
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
 								equipment.setUnindexedProperty("Property " + propertyNumber, req.getParameter("propertyNumber"+propertyNumber));

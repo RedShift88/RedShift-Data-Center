@@ -111,6 +111,30 @@
 			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
 <%
 					break;
+				case "DateTime":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			<input type="datetime-local" name="${fn:escapeXml(propertyNumber)}"><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
+				case "Duration":
+%>
+			${fn:escapeXml(propertyDescription)}:<br>
+			Every <input type="number" name="${fn:escapeXml(propertyNumber)}" min=0 step=1>
+			<select name="${fn:escapeXml(propertyNumber)}Options">
+<%
+					for(String propertyOption : propertyOptions){
+						pageContext.setAttribute("propertyOption", propertyOption);
+%>
+				<option value="${fn:escapeXml(propertyOption)}">${fn:escapeXml(propertyOption)}</option>
+<%
+				}
+%>
+			</select><br>
+			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
+<%
+					break;
 				default:
 %>
 			${fn:escapeXml(propertyDescription)}:<br>

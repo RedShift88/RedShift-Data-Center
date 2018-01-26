@@ -23,13 +23,13 @@ handlers:
   static_files: __static__\1
   upload: __NOT_USED__
   require_matching_file: True
-  login: optional
+  login: admin
   secure: always
 - url: (/cron/.*)
   static_files: __static__\1
   upload: __NOT_USED__
   require_matching_file: True
-  login: optional
+  login: admin
   secure: always
 - url: (/.*)
   static_files: __static__\1
@@ -49,13 +49,21 @@ handlers:
   script: unused
   login: admin
   secure: always
+- url: /cron/.*/
+  script: unused
+  login: admin
+  secure: always
 - url: /admin/.*\.jsp
+  script: unused
+  login: admin
+  secure: always
+- url: /cron/
   script: unused
   login: admin
   secure: always
 - url: /cron/.*\.jsp
   script: unused
-  login: optional
+  login: admin
   secure: always
 - url: /.*/
   script: unused
