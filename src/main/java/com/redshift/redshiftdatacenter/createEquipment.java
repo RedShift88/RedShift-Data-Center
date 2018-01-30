@@ -49,7 +49,7 @@ public class createEquipment extends HttpServlet {
 					
 					datastore.put(equipment);
 
-					resp.sendRedirect("/addEquipmentDetails.jsp?key="+KeyFactory.keyToString(equipment.getKey()));
+					resp.sendRedirect("/entityAdmin/addEquipmentDetails.jsp?key="+KeyFactory.keyToString(equipment.getKey()));
 				}catch(EntityNotFoundException e){
 					e.printStackTrace();
 				}

@@ -8,7 +8,7 @@
 		<div><a href="/equipmentList.jsp">Equipment List</a></div>
 		<div><a href="/entityAdmin/createEquipment.jsp">Equipment Form</a></div>
 		<h1>Equipment Setup</h1>
-		<div><a href="/errors/comingSoon.jsp">Equipment Type List</a></div>
+		<div><a href="/entityAdmin/equipmentTypeList.jsp">Equipment Type List</a></div>
 		<div><a href="/entityAdmin/createEquipmentType.jsp">Equipment Type Form</a></div>
 		<h1>Maintenance Event</h1>
 		<div><a href="/errors/comingSoon.jsp">Maintenance Event Form</a></div>

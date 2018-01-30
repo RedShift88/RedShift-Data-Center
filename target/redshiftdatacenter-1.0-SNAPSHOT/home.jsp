@@ -9,7 +9,7 @@
 		<h1>Equipment</h1>
 		<div><a href="/equipmentList.jsp">Equipment List</a></div>
 		<h1>Maintenance Event</h1>
-		<div><a href="/maintenaceEventForm.jsp">Maintenance Event Form</a></div>
+		<div><a href="/errors/comingSoon.jsp">Maintenance Event Form</a></div>
 		<h2>Sign Out</h2>
 <%
 	UserService userService = UserServiceFactory.getUserService();

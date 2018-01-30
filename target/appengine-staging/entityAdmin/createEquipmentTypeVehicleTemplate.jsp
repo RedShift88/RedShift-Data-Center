@@ -40,7 +40,7 @@
 			Property #1 Options: N/A<br>
 			<input type="hidden" name="propertyOptions1" value="">
 			Property #1 Trackable: False<br>
-			<input type="hidden" name="propertyTracking1" value="false">
+			<input type="hidden" name="propertyTracking1" value="false"><br>
 			Property #2 Description: Engine Oil Capacity<br>
 			<input type="hidden" name="propertyDescription2" value="Engine Oil Capacity">
 			Property #2 Type: Short Text<br>
@@ -48,7 +48,7 @@
 			Property #2 Options: N/A<br>
 			<input type="hidden" name="propertyOptions2" value="">
 			Property #2 Trackable: False<br>
-			<input type="hidden" name="propertyTracking2" value="false">
+			<input type="hidden" name="propertyTracking2" value="false"><br>
 			Property #3 Description: Engine Oil Change Frequency<br>
 			<input type="hidden" name="propertyDescription3" value="Engine Oil Change Frequency">
 			Property #3 Type: Duration<br>
@@ -56,7 +56,7 @@
 			Property #3 Options: N/A<br>
 			<input type="hidden" name="propertyOptions3" value="Days,Weeks,Months,Years">
 			Property #3 Trackable: False<br>
-			<input type="hidden" name="propertyTracking3" value="false">
+			<input type="hidden" name="propertyTracking3" value="false"><br>
 			Property #4 Description: Engine Oil Change Date<br>
 			<input type="hidden" name="propertyDescription4" value="Engine Oil Change Date">
 			Property #4 Type: Date<br>
@@ -64,7 +64,7 @@
 			Property #4 Options: N/A<br>
 			<input type="hidden" name="propertyOptions4" value="">
 			Property #4 Trackable: True<br>
-			<input type="hidden" name="propertyTracking4" value="true">
+			<input type="hidden" name="propertyTracking4" value="true"><br>
 			Property #5 Description: Transmission Oil<br>
 			<input type="hidden" name="propertyDescription5" value="Transmission Oil">
 			Property #5 Type: Short Text<br>
@@ -72,7 +72,7 @@
 			Property #5 Options: N/A<br>
 			<input type="hidden" name="propertyOptions5" value="">
 			Property #5 Trackable: False<br>
-			<input type="hidden" name="propertyTracking5" value="false">
+			<input type="hidden" name="propertyTracking5" value="false"><br>
 			Property #6 Description: Transmission Oil Capacity<br>
 			<input type="hidden" name="propertyDescription6" value="Transmission Oil Capacity">
 			Property #6 Type: Short Text<br>
@@ -80,7 +80,7 @@
 			Property #6 Options: N/A<br>
 			<input type="hidden" name="propertyOptions6" value="">
 			Property #6 Trackable: False<br>
-			<input type="hidden" name="propertyTracking6" value="false">
+			<input type="hidden" name="propertyTracking6" value="false"><br>
 			Property #7 Description: Transmission Oil Change Frequency<br>
 			<input type="hidden" name="propertyDescription7" value="Transmission Oil Change Frequency">
 			Property #7 Type: Duration<br>
@@ -88,7 +88,7 @@
 			Property #7 Options: N/A<br>
 			<input type="hidden" name="propertyOptions7" value="Days,Weeks,Months,Years">
 			Property #7 Trackable: False<br>
-			<input type="hidden" name="propertyTracking7" value="false">
+			<input type="hidden" name="propertyTracking7" value="false"><br>
 			Property #8 Description: Transmission Oil Change Date<br>
 			<input type="hidden" name="propertyDescription8" value="Transmission Oil Change Date">
 			Property #8 Type: Date<br>
@@ -96,7 +96,7 @@
 			Property #8 Options: N/A<br>
 			<input type="hidden" name="propertyOptions8" value="">
 			Property #8 Trackable: True<br>
-			<input type="hidden" name="propertyTracking8" value="true">
+			<input type="hidden" name="propertyTracking8" value="true"><br>
 			Property #9 Description: Radiator Fluid<br>
 			<input type="hidden" name="propertyDescription9" value="Radiator Fluid">
 			Property #9 Type: Short Text<br>
@@ -104,7 +104,7 @@
 			Property #9 Options: N/A<br>
 			<input type="hidden" name="propertyOptions9" value="">
 			Property #9 Trackable: False<br>
-			<input type="hidden" name="propertyTracking9" value="false">
+			<input type="hidden" name="propertyTracking9" value="false"><br>
 			Property #10 Description: Radiator Fluid Capacity<br>
 			<input type="hidden" name="propertyDescription10" value="Radiator Fluid Capacity">
 			Property #10 Type: Short Text<br>
@@ -112,7 +112,7 @@
 			Property #10 Options: N/A<br>
 			<input type="hidden" name="propertyOptions10" value="">
 			Property #10 Trackable: False<br>
-			<input type="hidden" name="propertyTracking10" value="false">
+			<input type="hidden" name="propertyTracking10" value="false"><br>
 			Property #11 Description: Radiator Fluid Change Frequency<br>
 			<input type="hidden" name="propertyDescription11" value="Radiator Fluid Change Frequency">
 			Property #11 Type: Duration<br>
@@ -120,7 +120,7 @@
 			Property #11 Options: N/A<br>
 			<input type="hidden" name="propertyOptions11" value="Days,Weeks,Months,Years">
 			Property #11 Trackable: False<br>
-			<input type="hidden" name="propertyTracking11" value="false">
+			<input type="hidden" name="propertyTracking11" value="false"><br>
 			Property #12 Description: Radiator Fluid Change Date<br>
 			<input type="hidden" name="propertyDescription12" value="Radiator Fluid Change Date">
 			Property #12 Type: Date<br>
@@ -128,7 +128,7 @@
 			Property #12 Options: N/A<br>
 			<input type="hidden" name="propertyOptions12" value="">
 			Property #12 Trackable: True<br>
-			<input type="hidden" name="propertyTracking12" value="true">
+			<input type="hidden" name="propertyTracking12" value="true"><br>
 			Property #13 Description: Differential Fluid<br>
 			<input type="hidden" name="propertyDescription13" value="Differential Fluid">
 			Property #13 Type: Short Text<br>
@@ -136,7 +136,7 @@
 			Property #13 Options: N/A<br>
 			<input type="hidden" name="propertyOptions13" value="">
 			Property #13 Trackable: False<br>
-			<input type="hidden" name="propertyTracking13" value="false">
+			<input type="hidden" name="propertyTracking13" value="false"><br>
 			Property #14 Description: Differential Fluid Capacity<br>
 			<input type="hidden" name="propertyDescription14" value="Differential Fluid Capacity">
 			Property #14 Type: Short Text<br>
@@ -144,7 +144,7 @@
 			Property #14 Options: N/A<br>
 			<input type="hidden" name="propertyOptions14" value="">
 			Property #14 Trackable: False<br>
-			<input type="hidden" name="propertyTracking14" value="false">
+			<input type="hidden" name="propertyTracking14" value="false"><br>
 			Property #15 Description: Differential Fluid Change Frequency<br>
 			<input type="hidden" name="propertyDescription15" value="Differential Fluid Change Frequency">
 			Property #15 Type: Duration<br>
@@ -152,7 +152,7 @@
 			Property #15 Options: N/A<br>
 			<input type="hidden" name="propertyOptions15" value="Days,Weeks,Months,Years">
 			Property #15 Trackable: False<br>
-			<input type="hidden" name="propertyTracking15" value="false">
+			<input type="hidden" name="propertyTracking15" value="false"><br>
 			Property #16 Description: Differential Fluid Change Date<br>
 			<input type="hidden" name="propertyDescription16" value="Differential Fluid Change Date">
 			Property #16 Type: Date<br>
@@ -160,8 +160,8 @@
 			Property #16 Options: N/A<br>
 			<input type="hidden" name="propertyOptions16" value="">
 			Property #16 Trackable: True<br>
-			<input type="hidden" name="propertyTracking16" value="true">
-			<button type="button" onclick="addPropertyItem(2);" id="addPropertyButton" >Add property</button><br><br>
+			<input type="hidden" name="propertyTracking16" value="true"><br>
+			<button type="button" onclick="addPropertyItem(17);" id="addPropertyButton" >Add property</button><br><br>
 			<input id="submitButton" type="submit" value="Submit">
 		</form>
 	</body>

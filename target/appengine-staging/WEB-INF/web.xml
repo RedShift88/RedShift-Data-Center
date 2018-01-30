@@ -97,6 +97,11 @@
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
         <servlet-class>org.apache.jsp.entityAdmin.home_jsp</servlet-class>
     </servlet>
@@ -109,6 +114,11 @@
     <servlet>
         <servlet-name>org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-name>
         <servlet-class>org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -217,6 +227,11 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-name>
+        <url-pattern>/entityAdmin/equipmentTypeList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
         <url-pattern>/entityAdmin/home.jsp</url-pattern>
     </servlet-mapping>
@@ -229,6 +244,11 @@
     <servlet-mapping>
         <servlet-name>org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-name>
         <url-pattern>/entityAdmin/serviceTechList.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-name>
+        <url-pattern>/entityAdmin/equipmentTypeTemplates/Vehicle.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

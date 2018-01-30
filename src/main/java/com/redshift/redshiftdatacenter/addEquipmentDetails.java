@@ -37,14 +37,14 @@ public class addEquipmentDetails extends HttpServlet {
 				if((Boolean) equipmentType.hasProperty("Property " + propertyNumber + " Type")){
 					propertyType = (String) equipmentType.getProperty("Property " + propertyNumber + " Type");
 					switch(propertyType){
-						case "String":
+						case "Short Text":
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
 								equipment.setUnindexedProperty("Property " + propertyNumber, req.getParameter("propertyNumber"+propertyNumber));
 							}else{
 								equipment.setUnindexedProperty("Property " + propertyNumber, null);
 							}
 							break;
-						case "Text":
+						case "Long Text":
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
 								equipment.setUnindexedProperty("Property " + propertyNumber, new Text(req.getParameter("propertyNumber"+propertyNumber)));
 							}else{
@@ -72,7 +72,7 @@ public class addEquipmentDetails extends HttpServlet {
 								equipment.setUnindexedProperty("Property " + propertyNumber, null);
 							}
 							break;
-						case "Boolean":
+						case "True/False":
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
 								equipment.setUnindexedProperty("Property " + propertyNumber, Boolean.parseBoolean(req.getParameter("propertyNumber"+propertyNumber)));
 							}else{
@@ -90,7 +90,7 @@ public class addEquipmentDetails extends HttpServlet {
 								equipment.setUnindexedProperty("Property " + propertyNumber, null);
 							}
 							break;
-						case "DateTime":
+						case "Date Time":
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
 								try{
 									equipment.setUnindexedProperty("Property " + propertyNumber, formatter.parse(req.getParameter("propertyNumber"+propertyNumber)));
@@ -103,7 +103,7 @@ public class addEquipmentDetails extends HttpServlet {
 							break;
 						case "Duration":
 							if(!req.getParameter("propertyNumber"+propertyNumber).isEmpty()){
-								equipment.setUnindexedProperty("Property " + propertyNumber, "Every " + req.getParameter("propertyNumber"+propertyNumber) + req.getParameter("propertyNumber"+propertyNumber+"Options"));
+								equipment.setUnindexedProperty("Property " + propertyNumber, "Every " + req.getParameter("propertyNumber"+propertyNumber) + " " + req.getParameter("propertyNumber"+propertyNumber+"Options"));
 							}else{
 								equipment.setUnindexedProperty("Property " + propertyNumber, null);
 							}

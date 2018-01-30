@@ -8,33 +8,33 @@
   <context-param>
     <param-name>org.eclipse.jetty.tlds</param-name>
     <param-value><![CDATA[
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fmt-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fn.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_1.tld",
     "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fmt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/permittedTaglibs.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/scriptfree.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0-rt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/sql.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fn.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/permittedTaglibs.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c-1_0.tld",
     "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/sql-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/c.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt.tld",
     "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/scriptfree.tld",
-    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/permittedTaglibs.tld"]]></param-value>
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fn.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/sql.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/fmt-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/scriptfree.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_1.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/sql.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fn.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/permittedTaglibs.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/x.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c-1_0-rt.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/x-1_0.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/org.apache.taglibs.taglibs-standard-impl-1.2.5.jar!/META-INF/c.tld",
+    "jar:${WAR.uri}/WEB-INF/lib/jstl-1.2.jar!/META-INF/fmt-1_0.tld"]]></param-value>
   </context-param>
   <context-param>
     <param-name>org.eclipse.jetty.resources</param-name>
@@ -46,22 +46,22 @@
   </context-param>
   <filter>
     <filter-name>AbandonedTransactionDetector</filter-name>
-    <filter-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):0">com.google.apphosting.utils.servlet.TransactionCleanupFilter</filter-class>
+    <filter-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):0">com.google.apphosting.utils.servlet.TransactionCleanupFilter</filter-class>
     <async-supported>false</async-supported>
   </filter>
   <filter>
     <filter-name>CloudSqlConnectionCleanupFilter</filter-name>
-    <filter-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):1">com.google.apphosting.utils.servlet.JdbcMySqlConnectionCleanupFilter</filter-class>
+    <filter-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):1">com.google.apphosting.utils.servlet.JdbcMySqlConnectionCleanupFilter</filter-class>
     <async-supported>false</async-supported>
   </filter>
   <filter>
     <filter-name>SaveSessionFilter</filter-name>
-    <filter-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):2">com.google.apphosting.runtime.jetty9.SaveSessionFilter</filter-class>
+    <filter-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):2">com.google.apphosting.runtime.jetty9.SaveSessionFilter</filter-class>
     <async-supported>false</async-supported>
   </filter>
   <filter>
     <filter-name>_ah_ParseBlobUploadFilter</filter-name>
-    <filter-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):3">com.google.apphosting.utils.servlet.ParseBlobUploadFilter</filter-class>
+    <filter-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):3">com.google.apphosting.utils.servlet.ParseBlobUploadFilter</filter-class>
     <async-supported>false</async-supported>
   </filter>
   <filter-mapping>
@@ -82,313 +82,331 @@
   </filter-mapping>
   <servlet>
     <servlet-name>_ah_default</servlet-name>
-    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):4">com.google.apphosting.runtime.jetty9.ResourceFileServlet</servlet-class>
+    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):4">com.google.apphosting.runtime.jetty9.ResourceFileServlet</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>_ah_sessioncleanup</servlet-name>
-    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):5">com.google.apphosting.utils.servlet.SessionCleanupServlet</servlet-class>
+    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):5">com.google.apphosting.utils.servlet.SessionCleanupServlet</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>_ah_warmup</servlet-name>
-    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):6">com.google.apphosting.utils.servlet.WarmupServlet</servlet-class>
+    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):6">com.google.apphosting.utils.servlet.WarmupServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>_ah_queue_deferred</servlet-name>
-    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):7">com.google.apphosting.utils.servlet.DeferredTaskServlet</servlet-class>
+    <servlet-class origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):7">com.google.apphosting.utils.servlet.DeferredTaskServlet</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.addEquipmentDetails_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.addEquipmentDetails_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):8">org.apache.jsp.addEquipmentDetails_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.createEquipment_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.createEquipment_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):9">org.apache.jsp.createEquipment_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.createEquipmentType_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.createEquipmentType_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):10">org.apache.jsp.createEquipmentType_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.equipmentList_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.equipmentList_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):11">org.apache.jsp.equipmentList_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.home_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.home_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):12">org.apache.jsp.home_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.index_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):13">org.apache.jsp.index_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.maintenanceEventForm_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.maintenanceEventForm_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):14">org.apache.jsp.maintenanceEventForm_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.serviceTechForm_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):15">org.apache.jsp.serviceTechForm_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):15">org.apache.jsp.serviceTechForm_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.serviceTechList_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):16">org.apache.jsp.serviceTechList_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):16">org.apache.jsp.serviceTechList_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.viewEquipmentDetails_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):17">org.apache.jsp.viewEquipmentDetails_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):17">org.apache.jsp.viewEquipmentDetails_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.errors.comingSoon_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):18">org.apache.jsp.errors.comingSoon_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):18">org.apache.jsp.errors.comingSoon_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.errors.serverError_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):19">org.apache.jsp.errors.serverError_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):19">org.apache.jsp.errors.serverError_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.addEquipmentDetails_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):20">org.apache.jsp.entityAdmin.addEquipmentDetails_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):20">org.apache.jsp.entityAdmin.addEquipmentDetails_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.adminHome_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):21">org.apache.jsp.entityAdmin.adminHome_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):21">org.apache.jsp.entityAdmin.adminHome_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):22">org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):22">org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):23">org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):23">org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):24">org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):24">org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):25">org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):25">org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):26">org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):26">org.apache.jsp.entityAdmin.home_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):27">org.apache.jsp.entityAdmin.home_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.serviceTechForm_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):27">org.apache.jsp.entityAdmin.serviceTechForm_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):28">org.apache.jsp.entityAdmin.serviceTechForm_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):28">org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):29">org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-class>
+    <async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+    <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-name>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):30">org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.admin.createEntityAdmin_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):29">org.apache.jsp.admin.createEntityAdmin_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):31">org.apache.jsp.admin.createEntityAdmin_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.admin.createEntityForm_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):30">org.apache.jsp.admin.createEntityForm_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):32">org.apache.jsp.admin.createEntityForm_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>org.apache.jsp.admin.entityList_jsp</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):31">org.apache.jsp.admin.entityList_jsp</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):33">org.apache.jsp.admin.entityList_jsp</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>createEntity</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):32">com.redshift.redshiftdatacenter.createEntity</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):34">com.redshift.redshiftdatacenter.createEntity</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>createEntityAdmin</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):33">com.redshift.redshiftdatacenter.createEntityAdmin</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):35">com.redshift.redshiftdatacenter.createEntityAdmin</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>createEquipment</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):34">com.redshift.redshiftdatacenter.createEquipment</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):36">com.redshift.redshiftdatacenter.createEquipment</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>createEquipmentType</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):35">com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):37">com.redshift.redshiftdatacenter.createEquipmentType</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>addEquipmentDetails</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):36">com.redshift.redshiftdatacenter.addEquipmentDetails</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):38">com.redshift.redshiftdatacenter.addEquipmentDetails</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>createServiceTech</servlet-name>
-    <servlet-class origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):37">com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
+    <servlet-class origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):39">com.redshift.redshiftdatacenter.createServiceTech</servlet-class>
     <async-supported>false</async-supported>
   </servlet>
   <servlet>
     <servlet-name>HelloAppEngine</servlet-name>
-    <servlet-class origin="@WebServlet(com.redshift.redshiftdatacenter.HelloAppEngine):38">com.redshift.redshiftdatacenter.HelloAppEngine</servlet-class>
-    <async-supported origin="@WebServlet(com.redshift.redshiftdatacenter.HelloAppEngine):39">false</async-supported>
+    <servlet-class origin="@WebServlet(com.redshift.redshiftdatacenter.HelloAppEngine):40">com.redshift.redshiftdatacenter.HelloAppEngine</servlet-class>
+    <async-supported origin="@WebServlet(com.redshift.redshiftdatacenter.HelloAppEngine):41">false</async-supported>
   </servlet>
-  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):40">
+  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):42">
     <servlet-name>_ah_default</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):41">
+  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):43">
     <servlet-name>_ah_sessioncleanup</servlet-name>
     <url-pattern>/_ah/sessioncleanup</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):42">
+  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):44">
     <servlet-name>_ah_warmup</servlet-name>
     <url-pattern>/_ah/warmup</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):43">
+  <servlet-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):45">
     <servlet-name>_ah_queue_deferred</servlet-name>
     <url-pattern>/_ah/queue/__deferred__</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):44">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):46">
     <servlet-name>org.apache.jsp.addEquipmentDetails_jsp</servlet-name>
     <url-pattern>/addEquipmentDetails.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):45">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):47">
     <servlet-name>org.apache.jsp.createEquipment_jsp</servlet-name>
     <url-pattern>/createEquipment.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):46">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):48">
     <servlet-name>org.apache.jsp.createEquipmentType_jsp</servlet-name>
     <url-pattern>/createEquipmentType.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):47">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):49">
     <servlet-name>org.apache.jsp.equipmentList_jsp</servlet-name>
     <url-pattern>/equipmentList.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):48">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):50">
     <servlet-name>org.apache.jsp.home_jsp</servlet-name>
     <url-pattern>/home.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):49">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):51">
     <servlet-name>org.apache.jsp.index_jsp</servlet-name>
     <url-pattern>/index.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):50">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):52">
     <servlet-name>org.apache.jsp.maintenanceEventForm_jsp</servlet-name>
     <url-pattern>/maintenanceEventForm.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):51">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):53">
     <servlet-name>org.apache.jsp.serviceTechForm_jsp</servlet-name>
     <url-pattern>/serviceTechForm.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):52">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):54">
     <servlet-name>org.apache.jsp.serviceTechList_jsp</servlet-name>
     <url-pattern>/serviceTechList.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):53">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):55">
     <servlet-name>org.apache.jsp.viewEquipmentDetails_jsp</servlet-name>
     <url-pattern>/viewEquipmentDetails.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):54">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):56">
     <servlet-name>org.apache.jsp.errors.comingSoon_jsp</servlet-name>
     <url-pattern>/errors/comingSoon.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):55">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):57">
     <servlet-name>org.apache.jsp.errors.serverError_jsp</servlet-name>
     <url-pattern>/errors/serverError.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):56">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):58">
     <servlet-name>org.apache.jsp.entityAdmin.addEquipmentDetails_jsp</servlet-name>
     <url-pattern>/entityAdmin/addEquipmentDetails.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):57">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):59">
     <servlet-name>org.apache.jsp.entityAdmin.adminHome_jsp</servlet-name>
     <url-pattern>/entityAdmin/adminHome.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):58">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):60">
     <servlet-name>org.apache.jsp.entityAdmin.createEntityAdmin_jsp</servlet-name>
     <url-pattern>/entityAdmin/createEntityAdmin.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):59">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):61">
     <servlet-name>org.apache.jsp.entityAdmin.createEquipment_jsp</servlet-name>
     <url-pattern>/entityAdmin/createEquipment.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):60">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):62">
     <servlet-name>org.apache.jsp.entityAdmin.createEquipmentType_jsp</servlet-name>
     <url-pattern>/entityAdmin/createEquipmentType.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):61">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):63">
     <servlet-name>org.apache.jsp.entityAdmin.createEquipmentTypeVehicleTemplate_jsp</servlet-name>
     <url-pattern>/entityAdmin/createEquipmentTypeVehicleTemplate.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):62">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):64">
+    <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeList_jsp</servlet-name>
+    <url-pattern>/entityAdmin/equipmentTypeList.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):65">
     <servlet-name>org.apache.jsp.entityAdmin.home_jsp</servlet-name>
     <url-pattern>/entityAdmin/home.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):63">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):66">
     <servlet-name>org.apache.jsp.entityAdmin.serviceTechForm_jsp</servlet-name>
     <url-pattern>/entityAdmin/serviceTechForm.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):64">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):67">
     <servlet-name>org.apache.jsp.entityAdmin.serviceTechList_jsp</servlet-name>
     <url-pattern>/entityAdmin/serviceTechList.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):65">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):68">
+    <servlet-name>org.apache.jsp.entityAdmin.equipmentTypeTemplates.Vehicle_jsp</servlet-name>
+    <url-pattern>/entityAdmin/equipmentTypeTemplates/Vehicle.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):69">
     <servlet-name>org.apache.jsp.admin.createEntityAdmin_jsp</servlet-name>
     <url-pattern>/admin/createEntityAdmin.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):66">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):70">
     <servlet-name>org.apache.jsp.admin.createEntityForm_jsp</servlet-name>
     <url-pattern>/admin/createEntityForm.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):67">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):71">
     <servlet-name>org.apache.jsp.admin.entityList_jsp</servlet-name>
     <url-pattern>/admin/entityList.jsp</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):68">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):72">
     <servlet-name>createEntity</servlet-name>
     <url-pattern>/createEntity</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):69">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):73">
     <servlet-name>createEntityAdmin</servlet-name>
     <url-pattern>/createEntityAdmin</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):70">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):74">
     <servlet-name>createEquipment</servlet-name>
     <url-pattern>/createEquipment</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):71">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):75">
     <servlet-name>createEquipmentType</servlet-name>
     <url-pattern>/createEquipmentType</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):72">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):76">
     <servlet-name>addEquipmentDetails</servlet-name>
     <url-pattern>/addEquipmentDetails</url-pattern>
   </servlet-mapping>
-  <servlet-mapping origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):73">
+  <servlet-mapping origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):77">
     <servlet-name>createServiceTech</servlet-name>
     <url-pattern>/createServiceTech</url-pattern>
   </servlet-mapping>
@@ -402,7 +420,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Disable TRACE</web-resource-name>
-      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):74">/</url-pattern>
+      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):78">/</url-pattern>
       <http-method>TRACE</http-method>
     </web-resource-collection>
     <auth-constraint/>
@@ -410,14 +428,14 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Enable everything but TRACE</web-resource-name>
-      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):75">/</url-pattern>
+      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):79">/</url-pattern>
       <http-method-omission>TRACE</http-method-omission>
     </web-resource-collection>
   </security-constraint>
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>deferred_queue</web-resource-name>
-      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):76">/_ah/queue/__deferred__</url-pattern>
+      <url-pattern origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):80">/_ah/queue/__deferred__</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
@@ -426,7 +444,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>cron</web-resource-name>
-      <url-pattern origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):77">/cron/*</url-pattern>
+      <url-pattern origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):81">/cron/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
@@ -438,7 +456,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>admin</web-resource-name>
-      <url-pattern origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):78">/admin/*</url-pattern>
+      <url-pattern origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):82">/admin/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
@@ -450,7 +468,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>standardUser</web-resource-name>
-      <url-pattern origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):79">/*</url-pattern>
+      <url-pattern origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):83">/*</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>*</role-name>
@@ -462,7 +480,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>allUsers</web-resource-name>
-      <url-pattern origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):80">/*</url-pattern>
+      <url-pattern origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):84">/*</url-pattern>
     </web-resource-collection>
     <user-data-constraint>
       <transport-guarantee>CONFIDENTIAL</transport-guarantee>
@@ -472,159 +490,159 @@
     <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
   <locale-encoding-mapping-list>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):81">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):85">
       <locale>de</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):82">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):86">
       <locale>no</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):83">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):87">
       <locale>be</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):84">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):88">
       <locale>fi</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):85">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):89">
       <locale>ru</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):86">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):90">
       <locale>pt</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):87">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):91">
       <locale>bg</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):88">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):92">
       <locale>lt</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):89">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):93">
       <locale>hr</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):90">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):94">
       <locale>lv</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):91">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):95">
       <locale>fr</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):92">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):96">
       <locale>hu</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):93">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):97">
       <locale>zh_TW</locale>
       <encoding>Big5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):94">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):98">
       <locale>sh</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):95">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):99">
       <locale>uk</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):96">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):100">
       <locale>sk</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):97">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):101">
       <locale>sl</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):98">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):102">
       <locale>ca</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):99">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):103">
       <locale>mk</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):100">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):104">
       <locale>sq</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):101">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):105">
       <locale>sr</locale>
       <encoding>ISO-8859-5</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):102">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):106">
       <locale>sv</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):103">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):107">
       <locale>ko</locale>
       <encoding>EUC-KR</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):104">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):108">
       <locale>el</locale>
       <encoding>ISO-8859-7</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):105">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):109">
       <locale>en</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):106">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):110">
       <locale>is</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):107">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):111">
       <locale>it</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):108">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):112">
       <locale>es</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):109">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):113">
       <locale>iw</locale>
       <encoding>ISO-8859-8</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):110">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):114">
       <locale>zh</locale>
       <encoding>GB2312</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):111">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):115">
       <locale>et</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):112">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):116">
       <locale>cs</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):113">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):117">
       <locale>ar</locale>
       <encoding>ISO-8859-6</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):114">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):118">
       <locale>ja</locale>
       <encoding>Shift_JIS</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):115">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):119">
       <locale>pl</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):116">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):120">
       <locale>da</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):117">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):121">
       <locale>ro</locale>
       <encoding>ISO-8859-2</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):118">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):122">
       <locale>nl</locale>
       <encoding>ISO-8859-1</encoding>
     </locale-encoding-mapping>
-    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/JDawson/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):119">
+    <locale-encoding-mapping origin="DefaultsDescriptor(file:///C:/Users/Justin/AppData/Local/Google/Cloud%20SDK/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/docs/webdefault.xml):123">
       <locale>tr</locale>
       <encoding>ISO-8859-9</encoding>
     </locale-encoding-mapping>
@@ -637,10 +655,10 @@
       <secure>false</secure>
       <max-age>-1</max-age>
     </cookie-config>
-    <tracking-mode>URL</tracking-mode>
     <tracking-mode>COOKIE</tracking-mode>
+    <tracking-mode>URL</tracking-mode>
   </session-config>
-  <error-page origin="WebDescriptor(file:///C:/Users/JDawson/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):120">
+  <error-page origin="WebDescriptor(file:///C:/Users/Justin/Documents/GitHub/RedShift-Data-Center/target/appengine-staging/WEB-INF/web.xml):124">
     <error-code>500</error-code>
     <location>/errors/serverError.jsp</location>
   </error-page>

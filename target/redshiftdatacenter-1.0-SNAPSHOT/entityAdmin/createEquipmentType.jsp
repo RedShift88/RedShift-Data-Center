@@ -30,7 +30,7 @@
 	<body>
 		<h1>Equipment Type Form</h1>
 		<p>Please enter the details of the equipment type below</p>
-		<p>Alternatively, you can use a pre-defined template: <a href="/entityAdmin/createEquipmentTypeVehicleTemplate.jsp">Vehicle Template</a></p>
+		<p>Alternatively, you can use a pre-defined template: <a href="/entityAdmin/equipmentTypeTemplates/Vehicle.jsp">Vehicle Template</a></p>
 		<form action="/createEquipmentType" method="post" id="equipmentTypeForm">
 			Equipment Description:<br>
 			<input type="text" name="description"><br><br>
@@ -38,14 +38,14 @@
 			<input type="text" name="propertyDescription1"><br><br>
 			Property #1 Type:<br>
 			<select name="propertyType1">
-				<option value="String">Short Text</option>
-				<option value="Text">Long Text</option>
+				<option value="Short Text">Short Text</option>
+				<option value="Long Text">Long Text</option>
 				<option value="Drop Down">Drop Down</option>
 				<option value="Integer">Integer</option>
 				<option value="Double">Decimal</option>
-				<option value="Boolean">True/False</option>
+				<option value="True/False">True/False</option>
 				<option value="Date">Date</option>
-				<option value="DateTime">Date & Time</option>
+				<option value="Date Time">Date Time</option>
 				<option value="Duration">Duration</option>
 				<option value="Phone Number">Phone Number</option>
 				<option value="Email Address">Email Address</option>

@@ -36,6 +36,6 @@ public class createEntityAdmin extends HttpServlet {
 	
 		datastore.put(entityUser);
 
-		resp.sendRedirect("/entityAdmin/adminHome.jsp");
+		resp.sendRedirect("/entityAdmin/home.jsp");
 	}
 }

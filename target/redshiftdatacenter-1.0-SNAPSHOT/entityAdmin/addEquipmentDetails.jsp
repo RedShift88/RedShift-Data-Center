@@ -50,14 +50,14 @@
 			String[] propertyOptions = rawPropertyOptions.split(",");
 			pageContext.setAttribute("propertyTracking", equipmentType.getProperty("Property " + propertyNumber + " Tracking"));
 			switch(propertyType){
-				case "String":
+				case "Short Text":
 %>
 			${fn:escapeXml(propertyDescription)}:<br>
 			<input type="text" name="${fn:escapeXml(propertyNumber)}"><br>
 			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
 <%
 					break;
-				case "Text":
+				case "Long Text":
 %>
 			${fn:escapeXml(propertyDescription)}:<br>
 			<textarea name="${fn:escapeXml(propertyNumber)}" rows=5 cols=50 wrap="soft"></textarea><br>
@@ -94,7 +94,7 @@
 			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
 <%
 					break;
-				case "Boolean":
+				case "True/False":
 %>
 			${fn:escapeXml(propertyDescription)}:<br>
 			<select name="${fn:escapeXml(propertyNumber)}">
@@ -111,7 +111,7 @@
 			Tracking: ${fn:escapeXml(propertyTracking)}<br><br>
 <%
 					break;
-				case "DateTime":
+				case "Date Time":
 %>
 			${fn:escapeXml(propertyDescription)}:<br>
 			<input type="datetime-local" name="${fn:escapeXml(propertyNumber)}"><br>
