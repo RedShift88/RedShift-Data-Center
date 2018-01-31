@@ -68,6 +68,16 @@
 		<url-pattern>/createServiceTech</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>registerTechnician</servlet-name>
+		<servlet-class>com.redshift.redshiftdatacenter.registerTechnician</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>registerTechnician</servlet-name>
+		<url-pattern>/registerTechnician</url-pattern>
+	</servlet-mapping>
+	
 	<error-page>
         <error-code>500</error-code>
         <location>/errors/serverError.jsp</location>
@@ -108,16 +118,6 @@
             <role-name>*</role-name>
         </auth-constraint>
 		<user-data-constraint>
-            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint>
-	
-	<security-constraint>
-        <web-resource-collection>
-            <web-resource-name>allUsers</web-resource-name>
-            <url-pattern>/*</url-pattern>
-        </web-resource-collection>
-        <user-data-constraint>
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>
         </user-data-constraint>
     </security-constraint>

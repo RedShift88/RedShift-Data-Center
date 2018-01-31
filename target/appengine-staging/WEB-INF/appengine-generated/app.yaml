@@ -43,7 +43,7 @@ handlers:
   secure: always
 - url: /
   script: unused
-  login: optional
+  login: required
   secure: always
 - url: /admin/
   script: unused
@@ -67,7 +67,7 @@ handlers:
   secure: always
 - url: /.*/
   script: unused
-  login: optional
+  login: required
   secure: always
 - url: /_ah/.*
   script: unused
@@ -75,12 +75,20 @@ handlers:
   secure: always
 - url: /.*\.jsp
   script: unused
-  login: optional
+  login: required
   secure: always
 - url: /hello
   script: unused
   login: required
   secure: always
+- url: /registerTechnician
+  script: unused
+  login: required
+  secure: always
+- url: .*\.jsp
+  script: unused
+  login: optional
+  secure: optional
 - url: /createServiceTech
   script: unused
   login: required
@@ -89,10 +97,6 @@ handlers:
   script: unused
   login: required
   secure: always
-- url: .*\.jsp
-  script: unused
-  login: optional
-  secure: optional
 - url: /createEquipmentType
   script: unused
   login: required

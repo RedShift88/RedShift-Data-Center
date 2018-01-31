@@ -35,11 +35,11 @@
 			Key entityKey = (Key) loggedUser.getProperty("Parent Entity");
 			try{
 				Entity entity = datastore.get(entityKey);
-				Key equipmentKey = KeyFactory.createKey("Equipment", (String) entity.getProperty("Name"));
 				pageContext.setAttribute("entityName", (String) entity.getProperty("Name"));
 %>
 		<h1>Equipment List for ${fn:escapeXml(entityName)}</h1>
 <%
+				Key equipmentKey = KeyFactory.createKey("Equipment", (String) entity.getProperty("Name"));
 				Query equipmentQuery = new Query("Equipment", equipmentKey);
 				List<Entity> equipmentList = datastore.prepare(equipmentQuery).asList(FetchOptions.Builder.withDefaults());
 				for(Entity equipment : equipmentList){

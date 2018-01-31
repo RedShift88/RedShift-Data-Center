@@ -14,6 +14,9 @@
 			<input type="text" name="name"><br>
 			Notes:<br>
 			<textarea rows="5" cols="75" name="notes"></textarea><br>
+			Email:<br>
+			<input type="email" name="email"><br>
+			This email address will be used for verification. Please ensure that it is a valid Google account.<br>
 			<input type="submit" value="Submit">
 		</form>
 	</body>
